@@ -18,7 +18,7 @@ const employees = [
 
 function getTotalSalary(employees) {
   // console.log(employees)
-  let allEmployees = employees;
+  let allEmployees = { ...employees };
   let totalSalary = 0;
   for (const employee of allEmployees) {
     let incrementSalary = employee.experience * employee.increment;
