@@ -1,5 +1,5 @@
 function willSuccess(marks) {
-  //  validation
+  // input validation
   if (!Array.isArray(marks)) {
     return "Invalid";
   } else {

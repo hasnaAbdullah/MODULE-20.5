@@ -1,5 +1,5 @@
 function calculateSleepTime(times) {
-  //  validation
+  // input validation
   if (!Array.isArray(times)) {
     return "Invalid";
   } else {
@@ -17,11 +17,11 @@ function calculateSleepTime(times) {
   let s = sumOfTime % 60;
   let m = sumOfTime / 60;
   let h = m / 60;
-  m= m % 60;
-  let timeObj = {
+  m = m % 60;
+  const timeObj = {
     hour: parseInt(h),
     minute: parseInt(m),
-    second: parseInt(s)
+    second: parseInt(s),
   };
   return timeObj;
 }

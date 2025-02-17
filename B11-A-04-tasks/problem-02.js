@@ -1,10 +1,13 @@
-/*function signature/sample */
+
 function validContact(contact) {
+  //input validation
   if (typeof contact !== "string") {
     return "Invalid";
   }
+
+  //condition for valid contact number
   if (contact.length === 11) {
-    if (contact.startsWith("01") && !contact.includes(" ")) {
+    if (contact.slice(0, 2) === "01" && !contact.includes(" ")) {
       return true;
     } else {
       return false;
