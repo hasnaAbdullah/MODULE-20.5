@@ -1,5 +1,5 @@
 function willSuccess(marks) {
-    //  validation 
+  //  validation
   if (!Array.isArray(marks)) {
     return "Invalid";
   } else {
@@ -24,4 +24,3 @@ function willSuccess(marks) {
   }
   return false;
 }
-// console.log(willSuccess([40, 50,  [20, 30]]));
