@@ -9,7 +9,7 @@ function willSuccess(marks) {
       }
     }
   }
-  // checking that he/she will able to prepare or not
+  // checking that he/she will be able to prepare or not
   let passExam = 0;
   let failExam = 0;
   for (const mark of marks) {
@@ -24,4 +24,4 @@ function willSuccess(marks) {
   }
   return false;
 }
-console.log(willSuccess([40, 50,  [20, 30]]));
+// console.log(willSuccess([40, 50,  [20, 30]]));
